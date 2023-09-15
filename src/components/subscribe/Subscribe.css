@@ -1,0 +1,23 @@
+.input {
+  max-width: 190px;
+  padding: 8px 15px;
+  font-size: 17px;
+  color: black;
+  border-top-left-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+  border: 2px solid #fff;
+  margin-right: -10px;
+  outline: none;
+}
+
+.button {
+  border: none;
+  background-color: #fd7718;
+  text-decoration: none;
+  padding: 9px 15px;
+  font-size: 17px;
+  color: #fff;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  cursor: pointer;
+}

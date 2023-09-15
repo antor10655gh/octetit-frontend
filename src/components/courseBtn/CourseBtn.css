@@ -1,0 +1,65 @@
+.course-btn {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  border: none;
+  padding: 5px 0;
+  border-radius: 0.6rem;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.course-btn span:not(:nth-child(6)) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 40px;
+  width: 40px;
+  background-color: #fd7718;
+  border-radius: 50%;
+  transition: 0.6s ease;
+}
+
+.course-btn span:nth-child(6) {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.course-btn .text:hover .arrow {
+  transform: translateX(5px);
+  transition: 0.01s ease-in-out;
+}
+
+.course-btn:hover {
+  padding: 5px 15px;
+  color: #fff;
+  transition: 0.6s ease-in-out;
+}
+
+.course-btn span:nth-child(1) {
+  transform: translate(-3.3em, -4em);
+}
+
+.course-btn span:nth-child(2) {
+  transform: translate(-6em, 1.3em);
+}
+
+.course-btn span:nth-child(3) {
+  transform: translate(-0.2em, 1.8em);
+}
+
+.course-btn span:nth-child(4) {
+  transform: translate(3.5em, 1.4em);
+}
+
+.course-btn span:nth-child(5) {
+  transform: translate(3.5em, -3.8em);
+}
+
+.course-btn:hover span:not(:nth-child(6)) {
+  transform: translate(-50%, -50%) scale(4);
+  transition: 1.5s ease;
+}
