@@ -50,7 +50,7 @@ const Hero = () => {
                       as="a"
                       href="#"
                       color="gray"
-                      className="py-1.5 font-normal transition-colors hover:text-[#fd7718] transition duration-300 ease-in-out"
+                      className="py-1.5 font-normal transition-colors hover:text-[#f6cb04] transition duration-300 ease-in-out"
                     >
                       {link}
                     </Typography>
@@ -73,7 +73,7 @@ const Hero = () => {
             <Typography
               as="a"
               href="#"
-              className="opacity-80 transition-opacity hover:opacity-100 hover:text-[#fd7718] transition duration-300 ease-in-out"
+              className="opacity-80 transition-opacity hover:opacity-100 hover:text-[#f6cb04] transition duration-300 ease-in-out"
             >
               <svg
                 className="h-6 w-6"
@@ -91,7 +91,7 @@ const Hero = () => {
             <Typography
               as="a"
               href="#"
-              className="opacity-80 transition-opacity hover:opacity-100 hover:text-[#fd7718]"
+              className="opacity-80 transition-opacity hover:opacity-100 hover:text-[#f6cb04]"
             >
               <svg
                 className="h-6 w-6"
@@ -109,7 +109,7 @@ const Hero = () => {
             <Typography
               as="a"
               href="#"
-              className="opacity-80 transition-opacity hover:opacity-100 hover:text-[#fd7718] transition duration-300 ease-in-out"
+              className="opacity-80 transition-opacity hover:opacity-100 hover:text-[#f6cb04] transition duration-300 ease-in-out"
             >
               <svg
                 className="h-6 w-6"
@@ -123,7 +123,7 @@ const Hero = () => {
             <Typography
               as="a"
               href="#"
-              className="opacity-80 transition-opacity hover:opacity-100 hover:text-[#fd7718] transition duration-300 ease-in-out"
+              className="opacity-80 transition-opacity hover:opacity-100 hover:text-[#f6cb04] transition duration-300 ease-in-out"
             >
               <svg
                 className="h-6 w-6"
@@ -141,7 +141,7 @@ const Hero = () => {
             <Typography
               as="a"
               href="#"
-              className="opacity-80 transition-opacity hover:opacity-100 hover:text-[#fd7718] transition duration-300 ease-in-out"
+              className="opacity-80 transition-opacity hover:opacity-100 hover:text-[#f6cb04] transition duration-300 ease-in-out"
             >
               <svg
                 className="h-6 w-6"

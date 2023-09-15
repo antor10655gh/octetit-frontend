@@ -107,7 +107,7 @@ const CourseTab = () => {
         className="rounded-none border-b border-blue-gray-50 bg-transparent p-0"
         indicatorProps={{
           className:
-            'bg-transparent border-b-2 border-[#fd7718] shadow-none rounded-none'
+            'bg-transparent border-b-2 border-[#f6cb04] shadow-none rounded-none'
         }}
       >
         {data.map(({ label, value }) => (
@@ -116,7 +116,7 @@ const CourseTab = () => {
             value={value}
             onClick={() => handleChange(value)}
             className={`text-lg font-semibold ${
-              activeTab === value ? 'text-[#fd7718]' : 'text-blue-gray-500'
+              activeTab === value ? 'text-[#f6cb04]' : 'text-blue-gray-500'
             }`}
           >
             {label}

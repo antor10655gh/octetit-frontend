@@ -8,11 +8,11 @@
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
-  border: 1px solid #fd7718;
+  border: 1px solid #f6cb04;
   border-radius: 25px;
   outline: none;
   overflow: hidden;
-  color: #fd7718;
+  color: #f6cb04;
   transition: color 0.3s 0.1s ease-out;
   text-align: center;
 }
@@ -37,9 +37,9 @@
 
 .primary-btn:hover {
   color: #fff;
-  border: 1px solid #fd7718;
+  border: 1px solid #f6cb04;
 }
 
 .primary-btn:hover::before {
-  box-shadow: inset 0 0 0 10em #fd7718;
+  box-shadow: inset 0 0 0 10em #f6cb04;
 }

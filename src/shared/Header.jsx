@@ -54,7 +54,7 @@ const Header = () => {
         >
           <Link
             to={item.path}
-            className="flex items-center text-lg hover:text-[#fd7718] focus:text-[#fd7718] transition duration-300 ease-in-out"
+            className="flex items-center text-lg hover:text-[#f6cb04] focus:text-[#f6cb04] transition duration-300 ease-in-out"
           >
             {item.name}
           </Link>
