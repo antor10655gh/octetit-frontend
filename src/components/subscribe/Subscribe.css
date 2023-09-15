@@ -14,8 +14,9 @@
   border: none;
   background-color: #f6cb04;
   text-decoration: none;
-  padding: 9px 15px;
+  padding: 10px 15px;
   font-size: 17px;
+  font-weight: bold;
   color: #fff;
   border-top-right-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
