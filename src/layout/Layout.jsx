@@ -2,15 +2,18 @@ import React from 'react';
 import Header from '../shared/Header';
 import Routers from '../routes/Routers';
 import Footer from '../shared/Footer';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Layout = () => {
   return (
-    <div className="mx-auto max-w-screen-xl">
+    <div>
       <Header />
-      <main>
+      <main className="mx-auto max-w-screen-xl">
         <Routers />
       </main>
       <Footer />
+      <ToastContainer />
     </div>
   );
 };

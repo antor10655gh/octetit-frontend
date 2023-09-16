@@ -1,6 +1,5 @@
 import React from 'react';
 import './Hero.css';
-import PrimaryBtn from '../primaryBtn/PrimaryBtn';
 import banner from '../../assets/images/banner.png';
 
 const Hero = () => {
@@ -17,9 +16,7 @@ const Hero = () => {
             and efficiency,ensuring your business stays ahead in the digital
             landscape. Elevate your possibilities with Octetit.
           </p>
-          <div className="mt-2">
-            <PrimaryBtn text={'Get Started'} />
-          </div>
+          <div className="mt-2"></div>
         </div>
         <div className="hidden lg:block">
           <img

@@ -2,7 +2,6 @@ import React from 'react';
 import logo from '../assets/images/octetit.png';
 import './HeaderFooter.css';
 import { Link } from 'react-router-dom';
-import PrimaryBtn from '../components/primaryBtn/PrimaryBtn';
 import {
   Navbar,
   MobileNav,
@@ -78,7 +77,9 @@ const Header = () => {
           </Typography>
           <div className="hidden lg:block">{navList}</div>
           <div className="hidden lg:block">
-            <PrimaryBtn text={'Try for free'} />
+            <button className="primary-btn">
+              <Link to="/contact">Try for free</Link>
+            </button>
           </div>
           <IconButton
             variant="text"
@@ -121,7 +122,9 @@ const Header = () => {
         <MobileNav open={openNav}>
           <div className="w-full container mx-auto">
             {navList}
-            <PrimaryBtn text={'Try for free'} />
+            <button className="primary-btn">
+              <Link to="/contact">Try for free</Link>
+            </button>
           </div>
         </MobileNav>
       </Navbar>

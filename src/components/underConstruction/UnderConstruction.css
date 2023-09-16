@@ -1,0 +1,36 @@
+/* Define keyframes for the animation */
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to the image */
+.moving-image {
+  height: auto; /* Maintain aspect ratio */
+  position: relative;
+  animation: moveUp 2s linear infinite; /* Change duration and animation name as needed */
+}
+
+/* Alternate the animation direction */
+.moving-image.alternate {
+  animation: moveUp 2s linear alternate infinite;
+}

@@ -73,7 +73,7 @@ const TimeLine = () => {
           </Typography>
         </TimelineBody>
       </TimelineItem>
-      <TimelineItem>
+      <TimelineItem className="mt-5">
         <TimelineHeader>
           <TimelineIcon className="p-2">
             <ArrowRight className="h-4 w-4" />
