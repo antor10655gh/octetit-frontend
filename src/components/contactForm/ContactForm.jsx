@@ -24,9 +24,35 @@ const ContactForm = () => {
     e.preventDefault();
     // Now you can access the form data in the formData object
     console.log(formData);
+    if (formData.name === '') {
+      toast.error('Please enter your name', {
+        autoClose: 1500
+      });
+      return;
+    }
+    if (formData.email === '') {
+      toast.error('Please enter your email', {
+        autoClose: 1500
+      });
+      return;
+    }
+    if (formData.subject === '') {
+      toast.error('Please enter your subject', {
+        autoClose: 1500
+      });
+      return;
+    }
+    if (formData.message === '') {
+      toast.error('Please enter your message', {
+        autoClose: 1500
+      });
+      return;
+    }
+
+    // Send the form data to your server
     toast.success('Message Send Successfully!', {
       position: 'top-right',
-      autoClose: 2000,
+      autoClose: 1500,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
