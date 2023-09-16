@@ -21,7 +21,7 @@ const currentYear = new Date().getFullYear();
 
 const Hero = () => {
   return (
-    <footer className="relative w-full bg-blue-gray-50 py-5">
+    <footer className="relative w-full bg-blue-gray-50 py-5 lg:pt-12">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
           <Typography className="mb-6">
@@ -50,7 +50,7 @@ const Hero = () => {
                       as="a"
                       href="#"
                       color="gray"
-                      className="py-1.5 font-normal transition-colors hover:text-[#f6cb04] transition duration-300 ease-in-out"
+                      className="py-1.5 font-normal transition-colors hover:text-[#F7941F] transition duration-300 ease-in-out"
                     >
                       {link}
                     </Typography>
@@ -66,14 +66,16 @@ const Hero = () => {
             className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0"
           >
             &copy; {currentYear}{' '}
-            <a href="https://material-tailwind.com/">OCTETit</a>. All Rights
-            Reserved.
+            <a href="https://material-tailwind.com/">
+              OCTET<span className="text-[#F7941F]">it</span>
+            </a>
+            . All Rights Reserved.
           </Typography>
           <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
             <Typography
               as="a"
               href="#"
-              className="opacity-80 transition-opacity hover:opacity-100 hover:text-[#f6cb04] transition duration-300 ease-in-out"
+              className="opacity-80 transition-opacity hover:opacity-100 hover:text-[#F7941F] transition duration-300 ease-in-out"
             >
               <svg
                 className="h-6 w-6"
@@ -91,7 +93,7 @@ const Hero = () => {
             <Typography
               as="a"
               href="#"
-              className="opacity-80 transition-opacity hover:opacity-100 hover:text-[#f6cb04]"
+              className="opacity-80 transition-opacity hover:opacity-100 hover:text-[#F7941F]"
             >
               <svg
                 className="h-6 w-6"
@@ -109,7 +111,7 @@ const Hero = () => {
             <Typography
               as="a"
               href="#"
-              className="opacity-80 transition-opacity hover:opacity-100 hover:text-[#f6cb04] transition duration-300 ease-in-out"
+              className="opacity-80 transition-opacity hover:opacity-100 hover:text-[#F7941F] transition duration-300 ease-in-out"
             >
               <svg
                 className="h-6 w-6"
@@ -123,7 +125,7 @@ const Hero = () => {
             <Typography
               as="a"
               href="#"
-              className="opacity-80 transition-opacity hover:opacity-100 hover:text-[#f6cb04] transition duration-300 ease-in-out"
+              className="opacity-80 transition-opacity hover:opacity-100 hover:text-[#F7941F] transition duration-300 ease-in-out"
             >
               <svg
                 className="h-6 w-6"
@@ -141,7 +143,7 @@ const Hero = () => {
             <Typography
               as="a"
               href="#"
-              className="opacity-80 transition-opacity hover:opacity-100 hover:text-[#f6cb04] transition duration-300 ease-in-out"
+              className="opacity-80 transition-opacity hover:opacity-100 hover:text-[#F7941F] transition duration-300 ease-in-out"
             >
               <svg
                 className="h-6 w-6"

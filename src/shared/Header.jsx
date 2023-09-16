@@ -8,6 +8,7 @@ import {
   Typography,
   IconButton
 } from '@material-tailwind/react';
+import AddPopUp from '../components/addPopUp/AddPopUp';
 
 const Header = () => {
   const [openNav, setOpenNav] = React.useState(false);
@@ -53,7 +54,7 @@ const Header = () => {
         >
           <Link
             to={item.path}
-            className="flex items-center text-lg hover:text-[#f6cb04] focus:text-[#f6cb04] transition duration-300 ease-in-out"
+            className="flex items-center text-lg hover:text-[#F7941F] focus:text-[#F7941F] transition duration-300 ease-in-out"
           >
             {item.name}
           </Link>
@@ -77,9 +78,7 @@ const Header = () => {
           </Typography>
           <div className="hidden lg:block">{navList}</div>
           <div className="hidden lg:block">
-            <button className="primary-btn">
-              <Link to="/contact">Try for free</Link>
-            </button>
+            <AddPopUp />
           </div>
           <IconButton
             variant="text"
@@ -122,9 +121,7 @@ const Header = () => {
         <MobileNav open={openNav}>
           <div className="w-full container mx-auto">
             {navList}
-            <button className="primary-btn">
-              <Link to="/contact">Try for free</Link>
-            </button>
+            <AddPopUp />
           </div>
         </MobileNav>
       </Navbar>

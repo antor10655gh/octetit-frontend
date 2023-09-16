@@ -88,15 +88,15 @@ const TimeLine = () => {
             className="font-normal text-gray-600 flex items-center gap-2"
           >
             <Link to="https://www.facebook.com/">
-              <Facebook className="hover:cursor-pointer hover:text-[#f6cb04]" />
+              <Facebook className="hover:cursor-pointer hover:text-[#F7941F]" />
             </Link>
             <br />
             <Link to="https://www.instagram.com/">
-              <Instagram className="hover:cursor-pointer hover:text-[#f6cb04]" />
+              <Instagram className="hover:cursor-pointer hover:text-[#F7941F]" />
             </Link>
             <br />
             <Link to="https://www.twitter.com/">
-              <Twitter className="hover:cursor-pointer hover:text-[#f6cb04]" />
+              <Twitter className="hover:cursor-pointer hover:text-[#F7941F]" />
             </Link>
           </Typography>
         </TimelineBody>

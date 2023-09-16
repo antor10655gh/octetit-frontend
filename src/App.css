@@ -18,14 +18,14 @@ body {
   display: flex;
   align-items: center;
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: none;
   cursor: pointer;
-  border: 1px solid #f6cb04;
+  border: 1px solid #f7941f;
   border-radius: 5px;
   outline: none;
   overflow: hidden;
-  color: #f6cb04;
+  color: #f7941f;
   transition: color 0.3s 0.1s ease-out;
   text-align: center;
 }
@@ -50,7 +50,7 @@ body {
 
 .primary-btn:hover {
   color: #fff;
-  border: 1px solid #f6cb04;
+  border: 1px solid #f7941f;
 }
 
 .primary-btn:hover::before {

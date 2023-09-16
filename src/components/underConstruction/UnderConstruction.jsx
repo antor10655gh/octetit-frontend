@@ -10,7 +10,7 @@ const UnderConstruction = () => {
         alt=""
         className="w-full lg:w-1/2 moving-image"
       />
-      <h1 className="text-2xl lg:text-4xl text-[#f6cb04] font-bold mt-6 lg:mt-12">
+      <h1 className="text-2xl lg:text-4xl text-[#F7941F] font-bold mt-6 lg:mt-12">
         Our website is almost ready!
       </h1>
       <p className="text-sm lg:text-md text-gray-500">

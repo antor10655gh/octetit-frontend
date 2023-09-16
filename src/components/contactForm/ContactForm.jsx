@@ -83,14 +83,14 @@ const ContactForm = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
             <Input
               label="Your Name"
-              color="yellow"
+              color="orange"
               name="name"
               value={formData.name}
               onChange={handleChange}
             />
             <Input
               label="Your Email"
-              color="yellow"
+              color="orange"
               name="email"
               value={formData.email}
               onChange={handleChange}
@@ -99,7 +99,7 @@ const ContactForm = () => {
           <div className="my-5">
             <Input
               label="Subject"
-              color="yellow"
+              color="orange"
               name="subject"
               value={formData.subject}
               onChange={handleChange}
@@ -108,7 +108,7 @@ const ContactForm = () => {
           <div>
             <Textarea
               label="Message"
-              color="yellow"
+              color="orange"
               name="message"
               value={formData.message}
               onChange={handleChange}
