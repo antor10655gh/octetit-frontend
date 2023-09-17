@@ -5,14 +5,14 @@ import { FiArrowUp } from 'react-icons/fi';
 import './GoToTop.css';
 
 const GoToTop = () => {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
 
   const goToBtn = () => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   };
 
   const listenToScroll = () => {
-    let heightToHidden = 20;
+    let heightToHidden = 200;
     const winScroll =
       document.body.scrollTop || document.documentElement.scrollTop;
 
