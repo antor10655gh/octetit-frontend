@@ -10,10 +10,13 @@ import {
 } from '@material-tailwind/react';
 import addBanner from '../../assets/images/addBanner.jpg';
 import { AiOutlineClose } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 const AddPopUp = () => {
   const [open, setOpen] = React.useState(true);
 
-  const handleOpen = () => setOpen(!open);
+  const handleOpen = () => {
+    setOpen(!open);
+  };
   return (
     <div>
       <Badge content="1" color="orange">
@@ -34,9 +37,15 @@ const AddPopUp = () => {
           <img src={addBanner} alt="addBanner.jpg" />
         </DialogBody>
         <DialogFooter className="space-x-2">
-          <Button variant="gradient" onClick={handleOpen}>
-            Registration
-          </Button>
+          <Link
+            to="https://forms.gle/KHs3TKyE5aqi965N6"
+            target="_blank"
+            className="outline-none"
+          >
+            <Button variant="gradient" onClick={handleOpen}>
+              Registration
+            </Button>
+          </Link>
         </DialogFooter>
       </Dialog>
     </div>
