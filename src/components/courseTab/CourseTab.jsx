@@ -105,10 +105,10 @@ const CourseTab = () => {
           <TabPanel key={value} value={value}>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
               {courses.map(({ name, banner, desc }) => (
-                <div class="course-card">
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                  <div class="course-card-inner">
+                <div className="course-card">
+                  <div className="circle"></div>
+                  <div className="circle"></div>
+                  <div className="course-card-inner">
                     <div key={name} className="shadow-md rounded-md p-3">
                       <img
                         src={banner}

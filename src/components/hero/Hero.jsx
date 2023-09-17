@@ -23,7 +23,7 @@ const Hero = () => {
             className=""
             src={banner}
             alt="Woman enjoying food, meals in storage container, and food bowls on a table"
-            class="hero-img"
+            className="hero-img"
           />
         </div>
       </div>

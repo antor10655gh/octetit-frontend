@@ -8,17 +8,15 @@ import {
   TimelineBody,
   Typography
 } from '@material-tailwind/react';
-import { HomeIcon } from '@heroicons/react/24/solid';
 import {
   ArrowRight,
   EmailOutlined,
-  Facebook,
-  Instagram,
   LocalActivity,
-  PhoneAndroid,
-  Twitter
+  PhoneAndroid
 } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
+import { FaFacebookF, FaPinterestP } from 'react-icons/fa';
+import { FiInstagram } from 'react-icons/fi';
 
 const TimeLine = () => {
   return (
@@ -87,16 +85,22 @@ const TimeLine = () => {
             color="gary"
             className="font-normal text-gray-600 flex items-center gap-2"
           >
-            <Link to="https://www.facebook.com/">
-              <Facebook className="hover:cursor-pointer hover:text-[#F7941F]" />
+            <Link to="https://www.facebook.com/octetit.pro" target="_blank">
+              <div className="bg-[#E9EFF5] p-[8px] rounded-[3px] group hover:bg-[#285da1] transition duration-300 ease-in-out">
+                <FaFacebookF className="h-4 w-4 text-[#285DA1] group-hover:text-white transition duration-300 ease-in-out" />
+              </div>
             </Link>
-            <br />
-            <Link to="https://www.instagram.com/">
-              <Instagram className="hover:cursor-pointer hover:text-[#F7941F]" />
+            <Link to="https://www.pinterest.com/octetitpro/" target="_blank">
+              <div className="bg-[#feddb5] p-[8px] rounded-[3px] group hover:bg-[#f7941f] transition duration-300 ease-in-out">
+                {' '}
+                <FiInstagram className="h-4 w-4 text-[#f7941f] group-hover:text-white transition duration-300 ease-in-out" />
+              </div>
             </Link>
-            <br />
-            <Link to="https://www.twitter.com/">
-              <Twitter className="hover:cursor-pointer hover:text-[#F7941F]" />
+            <Link to="https://www.instagram.com/octetit.pro/" target="_blank">
+              <div className="bg-[#FBE8EC] p-[8px] rounded-[3px] group hover:bg-[#d8163f] transition duration-300 ease-in-out">
+                {' '}
+                <FaPinterestP className="h-4 w-4 text-[#DB294D] group-hover:text-white transition duration-300 ease-in-out" />
+              </div>
             </Link>
           </Typography>
         </TimelineBody>

@@ -4,7 +4,7 @@ import './Loader.css';
 const Loader = () => {
   return (
     <div className="loader-container">
-      <div class="loader">OCTETit</div>
+      <div className="loader">OCTETit</div>
     </div>
   );
 };

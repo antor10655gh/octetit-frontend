@@ -6,11 +6,11 @@ const Subscribe = () => {
     <div className="mt-3">
       <input
         placeholder="Enter your email"
-        class="input"
+        className="input"
         name="email"
         type="email"
       />
-      <button class="button">Subscribe</button>
+      <button className="button">Subscribe</button>
     </div>
   );
 };

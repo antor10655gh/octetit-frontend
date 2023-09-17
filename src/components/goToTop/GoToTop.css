@@ -1,0 +1,43 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.top-btn {
+  padding: 8px;
+  background-color: #f7941f;
+  right: 80px;
+  z-index: 999;
+  bottom: 80px;
+  display: flex;
+  cursor: pointer;
+  position: fixed;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.top-btn--icon {
+  font-size: 25px;
+  color: #fff;
+  animation: gototop 1.2s linear infinite alternate-reverse;
+}
+
+@keyframes gototop {
+  0% {
+    transform: translateY(-0.3rem);
+  }
+  100% {
+    transform: translateY(0.3rem);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top-btn {
+    right: 10%;
+    bottom: 5%;
+  }
+}

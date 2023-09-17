@@ -5,12 +5,12 @@ import { IoIosArrowForward } from 'react-icons/io';
 const CourseBtn = () => {
   return (
     <button className="course-btn mt-4">
-      <span class="circle1"></span>
-      <span class="circle2"></span>
-      <span class="circle3"></span>
-      <span class="circle4"></span>
-      <span class="circle5"></span>
-      <span class="text">
+      <span className="circle1"></span>
+      <span className="circle2"></span>
+      <span className="circle3"></span>
+      <span className="circle4"></span>
+      <span className="circle5"></span>
+      <span className="text">
         Know details <IoIosArrowForward className="arrow" />
       </span>
     </button>

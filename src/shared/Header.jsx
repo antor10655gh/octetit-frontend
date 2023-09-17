@@ -1,6 +1,5 @@
 import React from 'react';
 import logo from '../assets/images/octetit.png';
-import './HeaderFooter.css';
 import { Link } from 'react-router-dom';
 import {
   Navbar,
