@@ -1,43 +1,82 @@
 .loader-container {
-  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.loader {
-  font-size: 2rem;
-  font-family: sans-serif;
-  font-variant: small-caps;
-  font-weight: 900;
-  background: conic-gradient(
-    #dff2ae 0 25%,
-    #f7941f 25% 50%,
-    #feefe7 50% 75%,
-    #bedd24 75%
-  );
-  background-size: 200% 200%;
-  animation: animateBackground 4.5s ease-in-out infinite;
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
+.spinner {
+  position: relative;
 }
 
-@keyframes animateBackground {
-  25% {
-    background-position: 0 100%;
+.spinner > div {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 13px solid rgba(181, 126, 16, 0.196);
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: spinner-g7vlvwmd 0.65s linear infinite;
+  z-index: 0;
+}
+
+.spinner > div::before {
+  content: '';
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background: #ff8a23;
+  position: absolute;
+  top: 50%;
+  animation: spinner-h1vps1md 1.3s infinite reverse steps(1);
+  transform: translate(
+    calc(2 * var(--translate-2)),
+    calc(var(--translate) * 1%)
+  );
+  z-index: 1;
+}
+
+.spinner > div:nth-of-type(1) {
+  --translate: -50;
+  --translate-2: calc(56px / 8);
+}
+
+.spinner > div:nth-of-type(1)::before {
+  right: 0;
+}
+
+.spinner > div:nth-of-type(2) {
+  --translate: 50;
+  --translate-2: calc(-56px / 8);
+  animation-delay: 0.65s;
+  animation-direction: reverse;
+  transform: translate(21.5px, 0);
+}
+
+.spinner > div:nth-of-type(2)::before {
+  left: 0;
+  transform: translate(calc(-56px / 4), -50%);
+  animation-direction: normal;
+}
+
+@keyframes spinner-h1vps1md {
+  0% {
+    opacity: 0;
   }
 
   50% {
-    background-position: 100% 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes spinner-g7vlvwmd {
+  from {
+    transform: translate(calc(var(--translate) * 1%), 0)
+      translate(calc(var(--translate-2)), 0) rotate(0deg);
   }
 
-  75% {
-    background-position: 100% 0%;
-  }
-
-  100% {
-    background-position: 0 0;
+  to {
+    transform: translate(calc(var(--translate) * 1%), 0)
+      translate(calc(var(--translate-2)), 0) rotate(360deg);
   }
 }

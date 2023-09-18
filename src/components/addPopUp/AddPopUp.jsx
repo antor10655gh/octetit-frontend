@@ -42,8 +42,11 @@ const AddPopUp = () => {
             target="_blank"
             className="outline-none"
           >
-            <Button variant="gradient" onClick={handleOpen}>
-              Registration
+            <Button
+              onClick={handleOpen}
+              className="primary-btn hover:bg-[#F7941F]"
+            >
+              Freee Registration
             </Button>
           </Link>
         </DialogFooter>

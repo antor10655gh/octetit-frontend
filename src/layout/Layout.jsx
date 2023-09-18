@@ -9,7 +9,7 @@ const Layout = () => {
   return (
     <div>
       <Header />
-      <main className="mx-auto max-w-screen-xl">
+      <main>
         <Routers />
       </main>
       <Footer />

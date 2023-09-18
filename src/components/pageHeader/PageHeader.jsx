@@ -7,11 +7,11 @@ const PageHeader = ({ Breadcrumbs, banner }) => {
   };
   return (
     <div
-      className="h-[150px] lg:h-[250px] bg-no-repeat bg-cover bg-center"
+      className="h-[150px] lg:h-[300px] bg-no-repeat bg-cover bg-center"
       style={divStyle}
     >
-      <div className="h-[150px] lg:h-[250px] flex flex-col justify-center pl-10">
-        <h1 className="text-3xl text-white">{Breadcrumbs}</h1>
+      <div className="h-[150px] lg:h-[300px] flex flex-col justify-center pl-10 mx-auto max-w-screen-xl">
+        <h1 className="text-5xl text-white">{Breadcrumbs}</h1>
         <div className="text-white flex items-center text-lg">
           <Link to="/" className="opacity-60">
             <svg

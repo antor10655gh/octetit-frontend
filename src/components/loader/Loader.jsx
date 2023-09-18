@@ -4,7 +4,10 @@ import './Loader.css';
 const Loader = () => {
   return (
     <div className="loader-container">
-      <div className="loader">OCTETit</div>
+      <div class="spinner">
+        <div></div>
+        <div></div>
+      </div>
     </div>
   );
 };

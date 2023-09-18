@@ -8,11 +8,13 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #eceff1;
 }
 
 /* This css for only primary button */
 .primary-btn {
   background: transparent;
+  text-transform: capitalize;
   position: relative;
   padding: 8px 20px;
   display: flex;

@@ -64,8 +64,8 @@ const Header = () => {
 
   return (
     <>
-      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none py-2 px-0 lg:py-4 shadow-none">
-        <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
+      <Navbar className="sticky top-0 z-40 h-max max-w-full rounded-none py-2 px-0 lg:py-4 shadow-none bg-transparent border-0">
+        <div className="container mx-auto flex items-center justify-between text-blue-gray-900 py-4">
           <Typography
             as="a"
             href="#"

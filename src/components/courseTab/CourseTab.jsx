@@ -92,7 +92,7 @@ const CourseTab = () => {
             key={value}
             value={value}
             onClick={() => handleChange(value)}
-            className={`text-lg font-semibold ${
+            className={`text-base lg:text-lg font-semibold ${
               activeTab === value ? 'text-[#F7941F]' : 'text-blue-gray-500'
             }`}
           >
