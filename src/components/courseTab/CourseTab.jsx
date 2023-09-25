@@ -79,7 +79,7 @@ const CourseTab = () => {
   };
 
   return (
-    <Tabs className="py-6 lg:py-12" value={activeTab}>
+    <Tabs className="pt-6 lg:pt-12" value={activeTab}>
       <TabsHeader
         className="rounded-none border-b border-blue-gray-50 bg-transparent p-0"
         indicatorProps={{

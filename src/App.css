@@ -11,6 +11,11 @@ body {
   background-color: #eceff1;
 }
 
+h1,
+h3 {
+  color: #0e1133;
+}
+
 /* This css for only primary button */
 .primary-btn {
   background: transparent;
@@ -56,5 +61,95 @@ body {
 }
 
 .primary-btn:hover::before {
-  box-shadow: inset 0 0 0 10em #f6ad04;
+  box-shadow: inset 0 0 0 10em #f7941f;
+}
+
+/* This css for only current events card */
+.current-events-card {
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #090909;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.current-events-card:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.current-events-card:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.current-events-card:after {
+  content: '';
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #f7941f;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.current-events-card:hover {
+  color: #ffffff;
+  border: 1px solid #f7941f;
+}
+
+.current-events-card:hover:before {
+  top: -35%;
+  background-color: #f7941f;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.current-events-card:hover:after {
+  top: -45%;
+  background-color: #f7941f;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.animated-arrow {
+  position: relative;
+  animation: moveLeftToRight 3s linear infinite, fade 3s ease-in-out infinite;
+}
+
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 0.1; /* Low opacity */
+  }
+  50% {
+    opacity: 100; /* Full opacity */
+  }
 }

@@ -71,58 +71,61 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 my-10 lg:my-20 gap-20 px-10 lg:px-0">
-      <div>
-        <div className="pb-5 lg:pb-10">
-          <h1 className="text-2xl lg:text-4xl font-bold">Get In Touch!</h1>
-          <p className="pt-1 text-sm lg:text-md text-gray-500">
-            Have a question or just want to say hi? We'd love to hear from you.
-          </p>
+    <div className="mx-auto max-w-screen-xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 my-10 lg:my-20 gap-20 px-10 lg:px-0">
+        <div>
+          <div className="pb-5 lg:pb-10">
+            <h1 className="text-2xl lg:text-4xl font-bold">Get In Touch!</h1>
+            <p className="pt-1 text-sm lg:text-md text-gray-500">
+              Have a question or just want to say hi? We'd love to hear from
+              you.
+            </p>
+          </div>
+          <form onSubmit={handleSubmit}>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+              <Input
+                label="Your Name"
+                color="orange"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+              />
+              <Input
+                label="Your Email"
+                color="orange"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="my-5">
+              <Input
+                label="Subject"
+                color="orange"
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <Textarea
+                label="Message"
+                color="orange"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="mt-3">
+              <button type="submit" className="primary-btn">
+                Send Message
+              </button>
+            </div>
+          </form>
         </div>
-        <form onSubmit={handleSubmit}>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
-            <Input
-              label="Your Name"
-              color="orange"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-            />
-            <Input
-              label="Your Email"
-              color="orange"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="my-5">
-            <Input
-              label="Subject"
-              color="orange"
-              name="subject"
-              value={formData.subject}
-              onChange={handleChange}
-            />
-          </div>
-          <div>
-            <Textarea
-              label="Message"
-              color="orange"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="mt-3">
-            <button type="submit" className="primary-btn">
-              Send Message
-            </button>
-          </div>
-        </form>
-      </div>
-      <div>
-        <TimeLine />
+        <div>
+          <TimeLine />
+        </div>
       </div>
     </div>
   );

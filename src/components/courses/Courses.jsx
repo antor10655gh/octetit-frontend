@@ -3,7 +3,7 @@ import CourseTab from '../courseTab/CourseTab';
 
 const Courses = () => {
   return (
-    <div className="bg-white pt-24">
+    <div className="bg-white py-24">
       <div className="px-4 lg:px-0 mx-auto max-w-screen-xl">
         <div>
           <h1 className="text-2xl lg:text-4xl font-bold">
