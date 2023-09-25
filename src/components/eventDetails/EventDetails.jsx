@@ -130,10 +130,12 @@ const EventDetails = () => {
                 </div>
               </div>
               <div>
-                <button className="w-full p-3 bg-[#f7941f] text-white flex items-center justify-center rounded-md">
-                  Enroll
-                  <HiArrowNarrowRight className="animated-arrow w-5 h-5" />
-                </button>
+                <Link to="https://forms.gle/KHs3TKyE5aqi965N6" target="_blank">
+                  <button className="w-full p-3 bg-[#f7941f] text-white flex items-center justify-center rounded-md">
+                    Enroll
+                    <HiArrowNarrowRight className="animated-arrow w-5 h-5" />
+                  </button>
+                </Link>
               </div>
             </div>
             <div
