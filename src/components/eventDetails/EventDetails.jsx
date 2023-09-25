@@ -50,19 +50,15 @@ const EventDetails = () => {
             />
             <h3 className="text-2xl font-bold pt-5">Description</h3>
             <p className="py-2 text-justify">
-              He legged it up the kyver have it mush super me old mucker cheeky
-              naff that are you taking the piss, blow off down the pub bite your
-              arm off the wireless boot cor blimey guvnor happy days bender what
-              a load of rubbish, say pardon me horse play spiffing Why car boot
-              gosh bubble and squeak. Cheers Richard bugger show off show off
-              pick your nose and blow off get stuffed mate chancer in my flat
-              loo, bevvy amongst hunky-dory bender bubble and squeak me old
-              mucker vagabond, barmy spend a penny chimney pot young delinquent
-              bum bag thebee's knees chap, gosh nice one knees up the wireless
-              Charles such a fibber. Mush barmy bleeding Jeffrey pardon me
-              barney grub loo cup of tea bubble and squeak bugger all mate say,
-              I bloke matie boy tickety-boo give us a bell up the duff bugger
-              lurgy wind up I don't want no agro.
+              Web design is the process of creating and arranging visual
+              elements, content, and interactive features on a web page or
+              website to deliver a compelling and user-friendly experience. It
+              encompasses a wide range of disciplines, including graphic design,
+              user interface (UI) design, user experience (UX) design, and
+              front-end web development. Effective web design is crucial for
+              achieving the goals of a website, whether those goals are to
+              inform, entertain, sell products, provide services, or engage
+              users in various ways.
             </p>
             <h3 className="text-2xl pt-3 font-bold ">
               This event will allow participants to:
