@@ -2,6 +2,8 @@ import React from 'react';
 import './Hero.css';
 import banner from '../../assets/images/banner1.png';
 import bookGif from '../../assets/images/book.gif';
+import heroLottie from '../../assets/images/herolottie.json';
+import Lottie from 'lottie-react';
 
 const Hero = () => {
   return (
@@ -28,9 +30,10 @@ const Hero = () => {
             </div>
           </div>
           <div>
-            <img
-              src={banner}
-              alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+            <Lottie
+              animationData={heroLottie}
+              loop={true}
+              className="hero-lottie"
             />
           </div>
         </div>

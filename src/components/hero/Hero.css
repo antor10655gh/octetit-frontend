@@ -1,1 +1,11 @@
+.hero-lottie {
+  width: 800px;
+  height: 1000px;
+}
 
+@media screen and (max-width: 640px) {
+  .hero-lottie {
+    width: 100%;
+    height: 100%;
+  }
+}
