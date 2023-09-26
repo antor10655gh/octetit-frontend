@@ -15,8 +15,6 @@
   background-color: #f7941f;
 }
 
-@media screen and (max-width: 640px) {
-  .swiper-horizontal {
-    padding: 0 20px !important;
-  }
+.swiper-horizontal {
+  padding: 0 20px !important;
 }

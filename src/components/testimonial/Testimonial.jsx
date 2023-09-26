@@ -94,7 +94,7 @@ const Testimonial = () => {
               }
             }}
             modules={[Pagination, Autoplay]}
-            className="mySwiper "
+            className="mySwiper"
           >
             {testimonials.map((testimonial) => (
               <SwiperSlide
