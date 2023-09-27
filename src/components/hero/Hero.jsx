@@ -41,7 +41,7 @@ const Hero = () => {
 
   return (
     <div
-      className="hero-container bg-no-repeat bg-cover bg-center"
+      className="hero-container bg-no-repeat bg-cover bg-center py-12"
       style={divStyle}
     >
       <div className="mx-auto max-w-screen-xl">
@@ -50,7 +50,7 @@ const Hero = () => {
             <Lottie
               animationData={graduate}
               loop={true}
-              className="absolute lg:-top-[37%] lg:-left-[14%] w-[100px] h-[100px] lg:w-[220px] lg:h-[220px]"
+              className="absolute -top-[19%] -left-[2%] lg:-top-[37%] lg:-left-[14%] w-[120px] h-[120px] lg:w-[220px] lg:h-[220px]"
             />
             <h1 className="text-2xl lg:text-5xl font-bold lg:leading-[60px]">
               Become a professional in IT & Rule the <br />{' '}
@@ -92,7 +92,7 @@ const Hero = () => {
                 }
               }}
               modules={[Pagination, Autoplay]}
-              className="mySwiper w-[300px] lg:w-[450px]"
+              className="mySwiper w-[370px] lg:w-[450px]"
             >
               {courses.map((course) => (
                 <SwiperSlide key={course.id} className="py-8 mb-5">
