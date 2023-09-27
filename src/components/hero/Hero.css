@@ -3,6 +3,27 @@
   height: 1000px;
 }
 
+.testimonial-card {
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #090909;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.swiper-pagination-bullet {
+  background-color: #f7941f !important;
+}
+
+.swiper-horizontal {
+  padding: 0 20px !important;
+}
+
 @media screen and (max-width: 640px) {
   .hero-lottie {
     width: 100%;
