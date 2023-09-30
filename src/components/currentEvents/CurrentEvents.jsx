@@ -8,30 +8,9 @@ const CurrentEvents = () => {
   const currentEvents = [
     {
       id: 1,
-      title: 'Free Web Design Class for Beginners',
-      date: 'Sep 30, 2023',
-      time: '10:00 AM',
-      location: 'Online'
-    },
-    {
-      id: 2,
-      title: 'Free Web Design Class for Beginners',
-      date: 'Sep 30, 2023',
-      time: '10:00 AM',
-      location: 'Online'
-    },
-    {
-      id: 3,
-      title: 'Free Web Design Class for Beginners',
-      date: 'Sep 30, 2023',
-      time: '10:00 AM',
-      location: 'Online'
-    },
-    {
-      id: 4,
-      title: 'Free Web Design Class for Beginners',
-      date: 'Sep 30, 2023',
-      time: '10:00 AM',
+      title: 'Web Design Basic Course for Beginners',
+      date: 'Oct 16, 2023',
+      time: '08:00 PM',
       location: 'Online'
     }
   ];
@@ -42,7 +21,7 @@ const CurrentEvents = () => {
         <div>
           <h1 className="text-2xl lg:text-4xl font-bold">Current Events</h1>
           <p className="py-2 text-sm lg:text-md text-gray-500">
-            We found 12 events available for you
+            We found 1 event available for you
           </p>
         </div>
         <div>

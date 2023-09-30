@@ -8,7 +8,7 @@ import {
   DialogFooter,
   Typography
 } from '@material-tailwind/react';
-import addBanner from '../../assets/images/addBanner.jpg';
+import addBanner from '../../assets/images/addBanner2.jpeg';
 import { AiOutlineClose } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 const AddPopUp = () => {
@@ -38,7 +38,7 @@ const AddPopUp = () => {
         </DialogBody>
         <DialogFooter className="space-x-2">
           <Link
-            to="https://forms.gle/KHs3TKyE5aqi965N6"
+            to="https://forms.gle/D3s1SAz54qtXC5fE8"
             target="_blank"
             className="outline-none"
           >
@@ -46,7 +46,7 @@ const AddPopUp = () => {
               onClick={handleOpen}
               className="primary-btn hover:bg-[#F7941F]"
             >
-              Freee Registration
+              Course Registration
             </Button>
           </Link>
         </DialogFooter>

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.css';
+import banner from '../../assets/images/addBanner2.jpeg';
 import probanner from '../../assets/images/probanner.png';
 import graduate from '../../assets/images/graduate.json';
 import Lottie from 'lottie-react';
@@ -14,30 +15,6 @@ const Hero = () => {
   const divStyle = {
     backgroundImage: `url(${probanner})`
   };
-
-  const courses = [
-    {
-      id: 1,
-      name: 'HTML',
-      banner:
-        'https://img.freepik.com/free-vector/programming-concept-illustration_114360-1670.jpg?w=826&t=st=1694766429~exp=1694767029~hmac=9ef60a2f3b556e1fd50df6dc868a885e7f2ceac9e6019297d0527b74c93186b3',
-      desc: 'World-class care for everyone. Our health System offers unmatched, expert health care. From the lab to the clinic.'
-    },
-    {
-      id: 2,
-      name: 'CSS',
-      banner:
-        'https://img.freepik.com/free-vector/programmer-concept-illustration_114360-2417.jpg',
-      desc: 'World-class care for everyone. Our health System offers unmatched, expert health care. From the lab to the clinic.'
-    },
-    {
-      id: 3,
-      name: 'JavaScript',
-      banner:
-        'https://img.freepik.com/free-vector/team-goals-concept-illustration_114360-5175.jpg',
-      desc: 'World-class care for everyone. Our health System offers unmatched, expert health care. From the lab to the clinic.'
-    }
-  ];
 
   return (
     <div
@@ -94,39 +71,82 @@ const Hero = () => {
               modules={[Pagination, Autoplay]}
               className="mySwiper w-[370px] lg:w-[450px]"
             >
-              {courses.map((course) => (
-                <SwiperSlide key={course.id} className="py-8 mb-5">
-                  <div class="relative flex w-full lg:w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-                    <div class="relative mx-4 -mt-6 h-56 lg:h-96 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
-                      <img
-                        src={course.banner}
-                        alt="img-blur-shadow"
-                        layout="fill"
-                        className="w-full h-full object-cover object-center"
-                      />
-                    </div>
-                    <div class="p-6">
-                      <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                        {course.name}
-                      </h5>
-                      <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                        {course.desc}
-                      </p>
-                    </div>
-                    <div class="p-6 pt-0">
-                      <Link to={`/events/${course.id}`}>
-                        <button
-                          class="select-none rounded-lg bg-orange-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-orange-500/20 transition-all hover:shadow-lg hover:shadow-orange-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                          type="button"
-                          data-ripple-light="true"
-                        >
-                          Read More
-                        </button>
-                      </Link>
-                    </div>
+              <SwiperSlide className="py-8 mb-5">
+                <div class="relative flex w-full lg:w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+                  <div class="relative mx-4 -mt-6 h-56 lg:h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
+                    <img
+                      src={banner}
+                      alt="img-blur-shadow"
+                      layout="fill"
+                      className="w-full h-full bg-no-repeat bg-cover bg-center"
+                    />
                   </div>
-                </SwiperSlide>
-              ))}
+                  <div class="p-6">
+                    <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                      Web Design Basic Course for Beginners
+                    </h5>
+
+                    <h3 className="pt-5">
+                      ✅ <span className="font-bold ">যা যা শিখতে পারবেন:</span>
+                      <ul className="pt-2">
+                        <li>
+                          ১। স্বপ্ন প্রকাশ করার জন্য সুন্দর এবং ব্যবহারযোগ্য
+                          Website তৈরি করতে পারবেন....
+                        </li>
+                      </ul>
+                    </h3>
+                  </div>
+                  <div class="p-6 pt-0">
+                    <Link to={`/events/${1}`}>
+                      <button
+                        class="select-none rounded-lg bg-orange-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-orange-500/20 transition-all hover:shadow-lg hover:shadow-orange-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                        type="button"
+                        data-ripple-light="true"
+                      >
+                        Read More
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="py-8 mb-5">
+                <div class="relative flex w-full lg:w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+                  <div class="relative mx-4 -mt-6 h-56 lg:h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
+                    <img
+                      src={banner}
+                      alt="img-blur-shadow"
+                      layout="fill"
+                      className="w-full h-full bg-no-repeat bg-cover bg-center"
+                    />
+                  </div>
+                  <div class="p-6">
+                    <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                      Web Design Basic Course for Beginners
+                    </h5>
+
+                    <h3 className="pt-5">
+                      ✅ <span className="font-bold ">যা যা শিখতে পারবেন:</span>
+                      <ul className="pt-2">
+                        <li>
+                          ১। স্বপ্ন প্রকাশ করার জন্য সুন্দর এবং ব্যবহারযোগ্য
+                          Website তৈরি করতে পারবেন....
+                        </li>
+                      </ul>
+                    </h3>
+                  </div>
+                  <div class="p-6 pt-0">
+                    <Link to={`/events/${1}`}>
+                      <button
+                        class="select-none rounded-lg bg-orange-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-orange-500/20 transition-all hover:shadow-lg hover:shadow-orange-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                        type="button"
+                        data-ripple-light="true"
+                      >
+                        Read More
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              </SwiperSlide>
             </Swiper>
           </div>
         </div>

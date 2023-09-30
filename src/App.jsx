@@ -9,7 +9,7 @@ export default function App() {
   React.useEffect(() => {
     setTimeout(() => {
       setUser(true);
-    }, 1000);
+    }, 3800);
   }, [user]);
   return <>{user ? <Layout /> : <Loader />}</>;
 }
