@@ -33,7 +33,7 @@ const EventDetails = ({ breadcrumbs }) => {
           </div>
           <div>
             <p className="text-gray-800">Time</p>
-            <p className="font-[600]">08:00 PM</p>
+            <p className="font-[600]">08:30 PM</p>
           </div>
           <div>
             <p className="text-gray-800">Location</p>
@@ -214,13 +214,20 @@ const EventDetails = ({ breadcrumbs }) => {
             >
               <div>
                 <h3 className="text-2xl font-[600]">Sponsors</h3>
-                <img src={sponsorsImg} alt="" className="py-3" />
+                <img src={sponsorsImg} alt="" className="py-8" />
               </div>
-              <div className="pb-5">
-                <h3 className="text-md font-[600]">Shaheen Reza</h3>
+              <div className="pb-1">
+                <h3 className="text-[20px] font-[600]">Shaheen Reza</h3>
                 <p className="text-gray-800">
                   <span className="font-[500] text-black">Email:</span>{' '}
-                  support@educal.com
+                  shaheen@corporatedream.org
+                </p>
+              </div>
+              <div className="pb-5">
+                <p className="text-gray-800">
+                  <span className="font-[500] text-black">Website:</span>
+                  <br />
+                  www.corporatedream.org
                 </p>
               </div>
               <div className="flex items-center">
